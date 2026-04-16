@@ -1,4 +1,5 @@
 import { ExternalLink, Github, Award, Zap, Cpu, BarChart3 } from 'lucide-react';
+import { useI18n } from '../contexts/I18nContext';
 
 interface Project {
   title: string;
@@ -84,11 +85,13 @@ export default function Projects() {
     }
   ];
 
+  const { t } = useI18n();
+
   return (
     <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 dark:text-white mb-4">
-          Professional Projects
+          {t('projects.title')}
         </h2>
         <div className="w-20 h-1 bg-blue-600 mx-auto mb-12"></div>
 

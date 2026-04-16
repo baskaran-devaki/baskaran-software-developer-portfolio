@@ -1,5 +1,6 @@
 import { Award, ExternalLink, Zap } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
+import { useI18n } from '../contexts/I18nContext';
 
 interface Certificate {
   id: number;
@@ -266,6 +267,7 @@ export default function NxtWavePodcast() {
     }
   ]);
 
+  const { t } = useI18n();
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [scrollWidth, setScrollWidth] = useState(0);
 
@@ -290,7 +292,7 @@ export default function NxtWavePodcast() {
           <div className="flex items-center justify-center gap-3 mb-4">
             <Zap className="text-blue-600" size={40} />
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
-              NxtWave Podcast
+              {t('nxtwave.title')}
             </h2>
           </div>
 
@@ -306,7 +308,7 @@ export default function NxtWavePodcast() {
           </h3>
 
           <p className="text-center text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Curated collection of certificates from 25+ industry-leading podcast sessions and learning experiences with top professionals and executives.
+            {t('nxtwave.description')}
           </p>
         </div>
 

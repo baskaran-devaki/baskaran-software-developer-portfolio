@@ -1,29 +1,20 @@
 import { BookOpen, Target, Zap } from 'lucide-react';
+import { useI18n } from '../contexts/I18nContext';
 
 export default function About() {
+  const { t } = useI18n();
   return (
     <section id="about" className="py-20 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 dark:text-white mb-4">
-          About Me
+          {t('about.title')}
         </h2>
         <div className="w-20 h-1 bg-blue-600 mx-auto mb-12"></div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-              I'm an aspiring software developer currently on an intensive learning journey with NxtWave,
-              mastering modern web development technologies and AI-powered workflow automation.
-            </p>
-            <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-              My passion lies in building practical, real-world applications that solve problems and
-              create value. I'm constantly exploring new technologies and best practices to stay at the
-              forefront of software development.
-            </p>
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              Through NxtWave's comprehensive curriculum, I'm developing a strong foundation in full-stack
-              development, coupled with hands-on experience in AI tools and automation workflows that are
-              shaping the future of software engineering.
+              {t('about.description')}
             </p>
           </div>
 

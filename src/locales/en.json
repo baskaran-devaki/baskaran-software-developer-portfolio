@@ -1,0 +1,52 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "journey": "Journey",
+    "nxtwave": "NxtWave",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Full Stack Developer",
+    "subtitle": "Building innovative solutions with React, Node.js, and modern web technologies",
+    "cta": "View My Work"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I'm a passionate developer with expertise in full-stack development, specializing in creating scalable, user-centric applications. With a strong foundation in both frontend and backend technologies, I transform ideas into powerful digital solutions."
+  },
+  "skills": {
+    "title": "Skills & Expertise",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Tools & DevOps"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "viewProject": "View Project",
+    "description": "A collection of my most recent and impactful projects"
+  },
+  "journey": {
+    "title": "My Journey",
+    "description": "Milestones and experiences that shaped my career"
+  },
+  "nxtwave": {
+    "title": "NxtWave Podcast Certificates",
+    "description": "Curated collection of certificates from 25+ industry-leading podcast sessions and learning experiences with top professionals and executives.",
+    "viewCertificate": "View Certificate"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "description": "Let's work together to create something amazing",
+    "email": "Email Me",
+    "phone": "Call Me",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "footer": {
+    "copyright": "All rights reserved",
+    "madeWith": "Made with passion"
+  }
+}

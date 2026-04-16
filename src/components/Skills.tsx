@@ -1,4 +1,5 @@
 import { Code, LayoutGrid as Layout, Bot, Wrench } from 'lucide-react';
+import { useI18n } from '../contexts/I18nContext';
 
 interface SkillCategory {
   title: string;
@@ -8,6 +9,7 @@ interface SkillCategory {
 }
 
 export default function Skills() {
+  const { t } = useI18n();
   const skillCategories: SkillCategory[] = [
     {
       title: 'Programming Languages',
@@ -24,7 +26,7 @@ export default function Skills() {
     {
       title: 'AI & Automation',
       icon: <Bot size={28} />,
-      color: 'from-purple-500 to-purple-600',
+      color: 'from-amber-500 to-amber-600',
       skills: ['AI Workflows', 'Process Automation', 'ChatGPT Integration', 'Prompt Engineering']
     },
     {
@@ -39,7 +41,7 @@ export default function Skills() {
     <section id="skills" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 dark:text-white mb-4">
-          Technical Skills
+          {t('skills.title')}
         </h2>
         <div className="w-20 h-1 bg-blue-600 mx-auto mb-12"></div>
 
