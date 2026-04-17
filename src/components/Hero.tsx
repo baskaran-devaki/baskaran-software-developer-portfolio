@@ -1,8 +1,6 @@
 import { Download, Mail, MessageCircle, Github, Linkedin, Twitter } from 'lucide-react';
-import { useI18n } from '../contexts/I18nContext';
 
 export default function Hero() {
-  const { t } = useI18n();
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 pt-16">
       <style>{`
@@ -35,11 +33,11 @@ export default function Hero() {
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-6 max-w-3xl mx-auto">
-            {t('hero.subtitle')}
+            Aspiring Software Developer | AI Workflow Automation Learner | NxtWave Student
           </p>
 
           <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
-            {t('hero.title')}
+            Building Real-World Projects Using Modern Web Technologies and AI Tools
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 mb-12">
@@ -47,7 +45,7 @@ export default function Hero() {
               href="#projects"
               className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all transform hover:scale-105 shadow-lg"
             >
-              {t('projects.viewProject')}
+              View Projects
             </a>
             <a
               href="https://docs.google.com/document/d/17vK41bWUpR5E9f1btC8qYHPYUTgcbCHu/edit?usp=drive_link&ouid=110155258988125851637&rtpof=true&sd=true"
@@ -62,7 +60,7 @@ export default function Hero() {
               href="#contact"
               className="px-8 py-3 bg-gray-900 dark:bg-gray-700 text-white rounded-lg hover:bg-gray-800 dark:hover:bg-gray-600 transition-all transform hover:scale-105 shadow-lg"
             >
-              {t('contact.title')}
+              Contact Me
             </a>
           </div>
 
