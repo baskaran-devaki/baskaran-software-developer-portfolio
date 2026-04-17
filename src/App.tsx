@@ -7,23 +7,20 @@ import Projects from './components/Projects';
 import NxtWavePodcast from './components/NxtWavePodcast';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import { I18nProvider } from './contexts/I18nContext';
 
 function App() {
   return (
-    <I18nProvider>
-      <div className="min-h-screen">
-        <Navbar />
-        <Hero />
-        <About />
-        <Skills />
-        <Journey />
-        <Projects />
-        <NxtWavePodcast />
-        <Contact />
-        <Footer />
-      </div>
-    </I18nProvider>
+    <div className="min-h-screen">
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Journey />
+      <Projects />
+      <NxtWavePodcast />
+      <Contact />
+      <Footer />
+    </div>
   );
 }
 
