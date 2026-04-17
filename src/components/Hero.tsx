@@ -29,7 +29,7 @@ export default function Hero() {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-4">
-            BASKARAN <span className="text-blue-900">R</span>
+            BASKARAN <span className="text-skyblue-900">R</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-6 max-w-3xl mx-auto">
